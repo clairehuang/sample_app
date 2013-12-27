@@ -64,6 +64,7 @@ guard 'spork', :cucumber_env => { 'RAILS_ENV' => 'test' }, :rspec_env => { 'RAIL
   watch('test/test_helper.rb') { :test_unit }
   watch(%r{features/support/}) { :cucumber }
 end
+<<<<<<< HEAD
 
 guard 'rspec' do
   watch(%r{^spec/.+_spec\.rb$})
@@ -86,3 +87,5 @@ guard 'rspec' do
   watch(%r{^spec/acceptance/steps/(.+)_steps\.rb$})   { |m| Dir[File.join("**/#{m[1]}.feature")][0] || 'spec/acceptance' }
 end
 
+=======
+>>>>>>> def3302599a5ea625841b95e2ecaee95065472ff
